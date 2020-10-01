@@ -96,7 +96,8 @@ object Hangman extends App {
         }
       }
       usedLetters += inLetter
-      println(usedLetters.mkString(", "))
+      print("Used letters: ")
+      print(usedLetters.mkString(", "))
     }
 
     /**
@@ -104,6 +105,7 @@ object Hangman extends App {
      *Depending on the input it starts a new game or stops
      */
 
+    println
     println("Wins: " +wins+" Losses: " + losses)
     val tryAgain = readLine("\nDo you want to try again? ")
 
@@ -114,6 +116,3 @@ object Hangman extends App {
     else println("Okay, see you next time!")
   }
 }
-
-
-
